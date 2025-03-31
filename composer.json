@@ -1,0 +1,12 @@
+{
+    "name": "brett-foster/website",
+    "description": "Brett Foster Cattle Co Website",
+    "authors": [
+        {
+            "name": "Daniel Fritsche"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

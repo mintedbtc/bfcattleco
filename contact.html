@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Brett Foster Cattle Co</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1><img src="images/logo.svg" alt="Brett Foster Cattle Co" class="logo"></h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cattle.html">Cattle</a>
+    <a href="horses.html">Quarter Horses</a>
+    <a href="blog.html">News</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us about our cattle, horses, or any other inquiries</p>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-info">
+      <h3>Our Location</h3>
+      <p>Brett Foster Cattle Co</p>
+      <p>123 Ranch Road</p>
+      <p>Booneville, AR 72927</p>
+      
+      <h3>Contact Information</h3>
+      <p>Phone: (479) 555-0123</p>
+      <p>Email: info@brettfostercattle.com</p>
+    </div>
+
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyzedvdq" method="POST">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="cattle">Cattle Inquiry</option>
+            <option value="horses">Quarter Horses</option>
+            <option value="general">General Information</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Brett Foster Cattle Co</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

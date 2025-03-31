@@ -1,0 +1,402 @@
+/* Base Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: #1a1a1a;
+  color: white;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 0; /* Hide the text */
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+nav {
+  background: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4b190;
+}
+
+/* Main Content */
+main {
+  margin-top: 120px;
+  padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background: #d4b190;
+  color: #1a1a1a;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #c19b7c;
+  transform: translateY(-2px);
+}
+
+/* Grid Layout for Sections */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.grid-item h3 {
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+}
+
+/* News Section */
+.news-section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.news-section h3 {
+  color: #1a1a1a;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.news-section h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: #d4b190;
+}
+
+.news-item {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-item h4 {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.news-item .date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #1a1a1a;
+  color: white;
+  margin-top: 4rem;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin: 4rem 0;
+  padding: 0 1rem;
+}
+
+.section-header h2 {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Form Styles */
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.contact-info {
+  background: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-info h3 {
+  color: #d4b190;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.contact-info h3:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #d4b190;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f8f8;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d4b190;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(212, 177, 144, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.submit-btn {
+  background: #1a1a1a;
+  color: white;
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background: #d4b190;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+  
+  .contact-info {
+    order: 2;
+    padding: 2rem;
+  }
+  
+  .contact-form {
+    order: 1;
+    padding: 2rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.8rem;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  
+  nav a {
+    margin: 0 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .news-section {
+    padding: 0 1rem;
+  }
+  
+  .news-item {
+    padding: 1.5rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-form {
+    padding: 1rem;
+  }
+}
+
+/* Logo Styles */
+.logo {
+  height: 40px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+  padding: 5px 0;
+}
